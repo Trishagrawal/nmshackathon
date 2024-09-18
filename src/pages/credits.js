@@ -8,7 +8,7 @@ export default function Credit() {
   return (
     <>
     <Back />
-    <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 0] }}>
+    <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 5] }}>
       
       
       
