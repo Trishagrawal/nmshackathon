@@ -1,0 +1,342 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+    z-index: 2; 
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.header h1 {
+    font-family: 'supernova-2', display;
+    font-size: 40px;
+}
+
+.register-btn {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #d00;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+                url('b.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    height: 500px;
+    
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content img {
+    width: 150px;
+    
+}
+
+.hero-content h1 {
+    font-family: 'Bison', sans-serif;                                        
+    font-size: 100px;
+    margin-top: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+/* About Section */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 100px;
+    margin-box: 100px
+}
+
+.about-section h2, .events-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    size: 70%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Events Section */
+.events-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Center-aligning the Events Heading */
+.eventsheading {
+    font-size: 80px; 
+    margin-bottom: 70px!important; 
+    color: #fff; 
+    font-family: 'Bison', sans-serif; 
+    
+    width: 100%; 
+    position: relative; 
+}
+
+
+
+.event-card {
+    width: 250px;
+    background-color: #222;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.event-text {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+
+    transform: translateY(-10px); 
+}
+
+
+.more-info-btn {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    margin-bottom:150px;
+}
+
+.more-info-btn:hover {
+    background-color: #d00;
+}
+
+/* Theme Section */
+.theme-section {
+    text-align: center;
+    padding: 50px;
+    background: url('a.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+
+}
+
+.theme-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.theme-content {
+    position: relative;
+    z-index: 1;
+}
+
+.theme-content h2 {
+    font-size: 40px;
+}
+
+.theme-content h3 {
+    font-size: 30px;
+}
+
+.event-date {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* Venue Section */
+.venue, .sponsors {
+    text-align: center;
+    padding: 50px;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+/* Date Section */
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #131314; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 150px auto; 
+    max-width: 600px; 
+}
+
+.date-content {
+    padding: 20px;
+}
+
+.date h2 {
+    font-family: 'Bison', sans-serif; 
+    font-size: 36px; 
+    margin-bottom: 10px;
+    color: #ffffff; 
+}
+
+.date h3 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 28px; 
+    color: #e74c3c; 
+    margin-top: 40px;
+}
+.countdown-timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffffff;
+}
+.faq-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top:200px;
+    margin-bottom:200px;
+}
+.faq-header {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+.faq-item {
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+.faq-item:last-child {
+    border-bottom: none;
+}
+.question {
+    font-size: 1.2em;
+    color: #00ccff;
+    cursor: pointer;
+    position: relative;
+}
+.question::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 1.5em;
+    color: #00ccff;
+}
+.answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #ccc;
+}
+.faq-item.active .answer {
+    display: block;
+}
+.faq-item.active .question::after {
+    content: '-';
+}
+
+
+.question:hover {
+    color: #66ffff;
+}
+.faq-item.active .question:hover::after {
+    color: #ff6666;
+}
